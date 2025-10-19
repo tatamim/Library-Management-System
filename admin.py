@@ -10,7 +10,7 @@ def add_item(db):
     
     title = input("Enter title: ").strip()
     author = input("Enter author: ").strip()
-    description = input("Enter description (optionla): ").strip()
+    description = input("Enter description (optional): ").strip()
     if not title or not author:
         print("Title and author cannot be empty")
         return

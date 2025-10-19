@@ -14,7 +14,7 @@ def main():
         table_exists = False
     
     if is_new_db or not table_exists:
-        print("Initializing database...")
+        print("Initializing database....")
         try:
             db_setup.setup_database('schema.sql', 'sample_data.sql')
         except Exception as e:

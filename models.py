@@ -30,7 +30,7 @@ class LibraryItem(ABC):
 
     @abstractmethod
     def display_info(self):
-        """Abtraction method to display item info """
+        """Abtraction method to display item info  """
         pass
 
 class Book(LibraryItem):

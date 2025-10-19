@@ -11,7 +11,7 @@ CREATE TABLE borrow_records (
     record_id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_name TEXT NOT NULL,
     item_id INTEGER NOT NULL,
-    borrow_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    borrow_date TIMESTAMP default CURRENT_TIMESTAMP,
     return_date TIMESTAMP,
     FOREIGN KEY (item_id) REFERENCES library_items(item_id) ON DELETE CASCADE
 );

@@ -4,7 +4,7 @@ from models import LibraryItem, Book, Magazine, BorrowRecord
 class DatabaseManager:
     def __init__(self, conn, cur):
         self.conn = conn 
-        self.cur = cur
+        self.cur = cur 
 
     def get_all_items(self):
         try:
@@ -69,5 +69,5 @@ class DatabaseManager:
             rows = self.cur.fetchall()
             return [BorrowRecord(row[0], user_name, row[1], row[2], row[3]) for row in rows]
         except sqlite3.Error as e:
-            print(f"Error fetching borrow history: {e}")
+            print(f"Error fetching borrow history:  {e}")
             return []

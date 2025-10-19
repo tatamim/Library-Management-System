@@ -40,6 +40,6 @@ class DatabaseSetup:
     def setup_database(self, schema_file, data_file):
         print("Setting up database schema...")
         self._execute_sql_file(schema_file)
-        print("Populatint intial data...")
+        print("Populatint intial data....")
         self._execute_sql_file(data_file)
          
